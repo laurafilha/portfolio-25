@@ -1,33 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
-	--cinza-claro: #f4f4f4;
-	--cinza-medio: #929292;
-    --cinza-escuro: #3A3535;
-    --laranja: #FF7315;
+  --cinza-claro: #f4f4f4;
+  --cinza-medio: #929292;
+  --cinza-escuro: #3a3535;
+  --laranja: #ff7315;
 }
 
-html, body {
-    height: 100%;
-    width: 100vw;
-    font-family: sans-serif; 
-    background-color: var(--cinza-claro);
-    font-family: "Poppins", system-ui;
-    font-size: 62.5%; 
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  font-family: sans-serif;
+  background-color: var(--cinza-claro);
+  font-family: "Poppins", system-ui;
+  font-size: 62.5%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .material-symbols-outlined .size-24 {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 100,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 100, "GRAD" 0, "opsz" 24;
 }

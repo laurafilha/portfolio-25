@@ -21,10 +21,10 @@
     <header class="header__conteiner">
       <img src="./assets/imagens/logo-header.svg" alt="" />
       <ul class="header__links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Ferramentas</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </header>
 
@@ -88,7 +88,7 @@
         </p>
       </div>
     </section>
-    <section class="section__container--cinza">
+    <section class="section__container--cinza" id="skills">
       <h2 class="titulo__secoes">Skills</h2>
       <div class="textos__secoes__conteiner">
         <p class="textos__secoes">
@@ -287,7 +287,7 @@
       </div>
     </section>
 
-    <section class="section__container">
+    <section class="section__container" id="#projetos">
       <h2 class="titulo__secoes">Projetos Web</h2>
       <div class="textos__secoes__conteiner">
         <p class="textos__secoes">
@@ -332,7 +332,7 @@
       </div>
     </section>
 
-    <section class="section__container--cinza">
+    <section class="section__container--cinza" id="contato">
       <h2 class="titulo__secoes">Contato</h2>
       <div class="textos__secoes__conteiner">
         <p class="textos__secoes">
@@ -340,26 +340,40 @@
           entrarei em contato o mais breve possível.
         </p>
       </div>
-      <form class="formulario__conteiner" action="#" method="post">
+      <form
+        class="formulario__conteiner"
+        name="formulario"
+        id="formulario"
+        action="#"
+        method="post"
+      >
         <div class="formulario__label">
           <label for="">Nome</label>
-          <input type="text" name="nome" placeholder="Seu nome" />
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" />
         </div>
         <div class="formulario__label">
           <label for="">E-mail</label>
-          <input type="email" name="email" placeholder="Seu e-mail" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+          />
         </div>
         <div class="formulario__label">
           <label for="">Mensagem</label>
           <textarea
             type="text"
             name="mensagem"
+            id="mensagem"
             rows="8"
             placeholder="Deixe sua mensagem"
           ></textarea>
         </div>
+        <button type="submit" id="submit" onclick="form.submit()">
+          Enviar
+        </button>
       </form>
-      <button type="submit">Enviar</button>
     </section>
     <footer class="footer__conteiner">
       <p class="footer__textos">
@@ -386,5 +400,6 @@
       src="https://kit.fontawesome.com/aea04d4778.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./contato.js"></script>
   </body>
 </html>
